@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .systemTeal
+        self.view.backgroundColor = .systemYellow
         
         let hideShowButton: UIButton = {
             let button = UIButton()
@@ -20,7 +20,6 @@ class HomeViewController: UIViewController {
             button.titleLabel?.tintColor = .white
             button.titleLabel?.font = .boldSystemFont(ofSize: 17)
             button.backgroundColor = .black
-            button.contentEdgeInsets = .init(top: 10, left: 16, bottom: 10, right: 16)
             button.layer.cornerRadius = 14
             button.addTarget(self, action: #selector(self.handleHideShowTabBar), for: .touchUpInside)
             return button
